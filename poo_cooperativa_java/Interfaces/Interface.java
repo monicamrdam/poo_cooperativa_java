@@ -1,5 +1,6 @@
 package Interfaces;
-
+import java.util.Scanner;
+import Controladores.ControladorPedido;
 /**
  * Write a description of class Interface here.
  * 
@@ -8,7 +9,5 @@ package Interfaces;
  */
 public class Interface
 {
-    public static void menu(){
-        System.out.println ("Hola Mundo");
-    }
+  
 }
