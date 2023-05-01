@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Interfaz_usuario_programa
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Interfaz_usuario_programa\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=java.lang.String\ solicitarFechaInicial()
+comment2.params=
+comment2.target=java.lang.String\ solicitarFechaFinal()
+comment3.params=
+comment3.target=void\ fechasBuscar()
+numComments=4
