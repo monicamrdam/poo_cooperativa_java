@@ -26,10 +26,13 @@ public class Interfaz_usuario_programa
 
     }
 
-    public static void fechasBuscar(){
-        fechaInicial = solicitarFechaInicial();
-        fechaFinal = solicitarFechaFinal();
-        System.out.println("Se buscará entre las fechas: " + fechaInicial + " y " + fechaFinal );
+    public static void saltoParrafo(){
+        System.out.println("==============================================================");
+
     }
 
+    public static void noSeHaEncontrado(){
+        System.out.println("No se ha encontrado el dato buscado" );
+
+    }
 }
