@@ -3,7 +3,6 @@ import ProyectoCooperativa.Modelos.Producto.*;
 import java.util.List;
 import java.util.ArrayList;
 
-
 /**
  * Write a description of class ProductorFederado here.
  * 
@@ -17,8 +16,7 @@ public class ProductorFederado extends Productor
     private String productoFederado;
     //Su tamaño esta definido por la suma de las ha de sus productores
     private List<ListaProductoresFederados> listaProductores = new ArrayList<ListaProductoresFederados>();
-    
-    
+
     
     public ProductorFederado() {
         super();
@@ -37,7 +35,6 @@ public class ProductorFederado extends Productor
         this.productoFederado = productoFederado;
     }
 
-    
     
 }
 

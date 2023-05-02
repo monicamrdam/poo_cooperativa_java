@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class GranProductor extends Productor
 
 {
-     private final int limiteHa=5;  
+    private final int limiteHa=5;  
     private double ha;
     //No existe límite
     private static List<Producto> productos = new ArrayList<Producto>();  

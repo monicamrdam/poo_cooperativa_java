@@ -8,10 +8,9 @@ package ProyectoCooperativa.Modelos.Productor;
  */
 public class Productor
 {
-     protected String id;
+    protected String id;
     protected String nombreApellidos;
-    
-    
+
     public Productor() {
     }
 

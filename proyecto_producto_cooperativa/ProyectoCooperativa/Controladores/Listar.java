@@ -36,7 +36,7 @@ public class Listar
 
     } 
 
-    public static Date ParseFecha(String fecha)
+    private static Date ParseFecha(String fecha)
     {
         SimpleDateFormat formato = new SimpleDateFormat("dd-MM-yyyy");
         Date fechaDate = null;

@@ -1,6 +1,5 @@
 package ProyectoCooperativa.Modelos.Producto;
 
-
 /**
  * Write a description of class Producto here.
  * 
@@ -9,7 +8,7 @@ package ProyectoCooperativa.Modelos.Producto;
  */
 public class Producto
 {
-     private int idProducto;
+    private int idProducto;
     private String nombreProducto;
     private double numHectareasProducto;
     //centimos por kg
@@ -70,8 +69,7 @@ public class Producto
         this.rendimientoPorHa = rendimientoPorHa;
     }
 
-    
-     @Override
+    @Override
     public String toString() {
         return "Id producto: " + this.idProducto + " Nombre producto: "+ this.nombreProducto + " Numero Hectareas Producto "+ this.numHectareasProducto  + " Precio Producto Sin Iva: "+ this.precioProductoSinIVa + " Rendimiento por Hectarea: "+ this.rendimientoPorHa;
     }

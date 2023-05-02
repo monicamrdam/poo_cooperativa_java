@@ -3,7 +3,6 @@ import ProyectoCooperativa.Modelos.Producto.*;
 import java.util.List;
 import java.util.ArrayList;
 
-
 /**
  * Write a description of class PequeñoProductor here.
  * 
@@ -36,14 +35,13 @@ public class PequeñoProductor extends Productor
         this.ha = ha;
     }
 
-      public List<Producto> getProductos() {
+    public List<Producto> getProductos() {
         return productos;
     }
 
     private void setProductos(List <Producto> productos) {
         this.productos = productos;
     }
-    
 
 
 }

@@ -1,6 +1,5 @@
 package ProyectoCooperativa.Modelos.Productor;
 
-
 /**
  * Write a description of class ListaProductoresFederados here.
  * 
@@ -11,7 +10,7 @@ package ProyectoCooperativa.Modelos.Productor;
 public class ListaProductoresFederados extends Productor
 {
     private double haProductofederado;
-    
+
     public ListaProductoresFederados() {
         super();
     }
@@ -20,7 +19,5 @@ public class ListaProductoresFederados extends Productor
         super(id, nombreApellidos);
         this.haProductofederado = haProductofederado;
     }
-    
-    
-}
 
+}
