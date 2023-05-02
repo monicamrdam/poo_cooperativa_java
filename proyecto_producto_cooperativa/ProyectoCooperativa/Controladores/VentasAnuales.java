@@ -14,7 +14,8 @@ import java.text.ParseException;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Listar
+public class VentasAnuales
+
 {
     private static Set set;
     private static Iterator iterator;

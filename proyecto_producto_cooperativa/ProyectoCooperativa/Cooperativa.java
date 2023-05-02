@@ -38,7 +38,6 @@ public class Cooperativa
         hmproductos.put((new BigInteger(50, random).toString(32)), new Producto("algodón", 0.5, 60,3.5));
         hmproductos.put((new BigInteger(50, random).toString(32)), new Producto("melocotón", 1.5, 40,3.5));
 
-               
 
         Juan = new PequeñoProductor(new BigInteger(50, random).toString(32), "Juan P", 2, productosJuan);
         Sonia = new PequeñoProductor(new BigInteger(50, random).toString(32),"Sonia R", 4.1,productosJuan);
@@ -64,15 +63,13 @@ public class Cooperativa
         System.out.println("Id: " + Algodon.getId()+" \nNombre: "+ Algodon.getProductorFederado()+" -> ");
         Interfaz_usuario_programa.saltoParrafo();
 
+        //LLamada al menu
         Menu.menuGestion(hmproductos);
         Interfaz_usuario_programa.saltoParrafo();        
-        
-        
-        
 
         
         
-        
+        /*No borrar
         Listar.listarLinkedHashMap(lhm);
         Interfaz_usuario_programa.saltoParrafo();
 
@@ -81,7 +78,7 @@ public class Cooperativa
         System.out.println("Las fechas entre las que se muestran datos son " + fechaInicial + " y " + fechaFinal);
 
         Listar.listarEntreDosFechas (lhm, fechaInicial, fechaFinal);
-
+         */
     }
 }
 
