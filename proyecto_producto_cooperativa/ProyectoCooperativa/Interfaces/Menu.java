@@ -1,5 +1,9 @@
 package ProyectoCooperativa.Interfaces;
+import ProyectoCooperativa.Controladores.*;
+import ProyectoCooperativa.Modelos.Producto.*;
+
 import java.util.Scanner;
+import java.util.HashMap;
 
 /**
  * Write a description of class Menu here.
@@ -11,15 +15,15 @@ public class Menu
     private static String opcion = "";
 
     //Permite acceder a las tres funciones del sistema registrar, gestión diaria y gestión anual de la cooperativa
-    public static void menuGestion(){
+    public static void menuGestion(HashMap<String, Producto> productos){
 
         do{
             System.out.println(
-                "1. Introducir datos \n2. Gestion diaria cooperativa\n3. Gestión anual cooperativa\n4. Salir\nElige:");
+                "1. Introducir/Modificar/Eliminar datos \n2. Gestion diaria cooperativa\n3. Gestión anual cooperativa\n4. Salir\nElige:");
             opcion = sc.nextLine();
             switch(opcion){
                 case "1":
-                    menuGestion();
+                    menuRegistrarDatos(productos);
                 case "2":
                     gestionDiariaCooperativa();  
                 case "3":
@@ -31,19 +35,19 @@ public class Menu
     }
 
     //Menu para insertar, modificar y eliminar registros de productos, clientes y productores
-    public static void menuRegistrarDatos(){
+    public static void menuRegistrarDatos(HashMap<String, Producto> productos){
 
         do{
             System.out.println(
-                "1. Datos del producto \n2. Datos de clientes\n3. Datos de productores\n4. Salir\nElige:");
+                "1. Agregar producto \n2. Mostrar lista de productos\n3. Modificar producto\n4. Salir\nElige:");
             opcion = sc.nextLine();
             switch(opcion){
                 case "1":
-                    //Datos del producto
+                    CRUD_Producto.agregarProducto(productos);
                 case "2":
-                    //Datos de clientes
+                    CRUD_Producto.mostrarProducto(productos);
                 case "3":
-                    //Datos de productores
+                    CRUD_Producto.modificarProducto(productos);
                 case "4":
                     break;
             }

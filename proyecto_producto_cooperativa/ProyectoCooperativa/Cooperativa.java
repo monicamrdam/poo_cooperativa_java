@@ -4,6 +4,7 @@ import ProyectoCooperativa.Controladores.*;
 import ProyectoCooperativa.Modelos.Producto.*;
 import ProyectoCooperativa.Modelos.Productor.*;
 import java.math.BigInteger;
+import java.util.HashMap;
 
 import java.util.Map;
 import java.util.LinkedHashMap;
@@ -21,6 +22,9 @@ public class Cooperativa
     private static List<Productor> integrantes = new ArrayList<Productor>();
     private static List<Producto> productosJuan = new ArrayList<Producto>();
 
+    //HastMap con los productos
+    private static HashMap <String, Producto> hmproductos ;
+
     private static PequeñoProductor Juan;
     private static PequeñoProductor Sonia;
     private static ProductorFederado Algodon;
@@ -28,14 +32,14 @@ public class Cooperativa
     private static Map <String, String> lhm;
 
     private static void cargarDatos(){
-        Producto p1 = new Producto (1, "naranjos", 1.5, 80,2.5);
-        Producto p2 = new Producto(2, "algodón", 0.5, 60,3.5);
-        Producto p3 = new Producto(3, "melocotón", 1.5, 40,3.5);
-        productosJuan.add(p1);
-        productosJuan.add(p2);
-        productosJuan.add(p3);    
-
         Random random = new Random();
+        hmproductos= new HashMap<String, Producto>();
+        hmproductos.put((new BigInteger(50, random).toString(32)), new Producto ("naranjos", 1.5, 80,2.5));
+        hmproductos.put((new BigInteger(50, random).toString(32)), new Producto("algodón", 0.5, 60,3.5));
+        hmproductos.put((new BigInteger(50, random).toString(32)), new Producto("melocotón", 1.5, 40,3.5));
+
+               
+
         Juan = new PequeñoProductor(new BigInteger(50, random).toString(32), "Juan P", 2, productosJuan);
         Sonia = new PequeñoProductor(new BigInteger(50, random).toString(32),"Sonia R", 4.1,productosJuan);
         Algodon = new ProductorFederado(new BigInteger(50, random).toString(32),"Algodon S.A.", "Algodon");
@@ -60,7 +64,13 @@ public class Cooperativa
         System.out.println("Id: " + Algodon.getId()+" \nNombre: "+ Algodon.getProductorFederado()+" -> ");
         Interfaz_usuario_programa.saltoParrafo();
 
-        Menu.menuGestion();
+        Menu.menuGestion(hmproductos);
+        Interfaz_usuario_programa.saltoParrafo();        
+        
+        
+        
+
+        
         
         
         Listar.listarLinkedHashMap(lhm);

@@ -21,6 +21,7 @@ public class Listar
     private static Map <String, String> lhm;
 
     public static void listarLinkedHashMap(Map <String, String> lhmap){
+        
         lhm= new LinkedHashMap<String, String>();
         set = lhmap.entrySet();
         iterator = set.iterator();

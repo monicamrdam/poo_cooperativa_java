@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=CRUD_Cliente
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ FuncionalidadesCRUD\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=productores
+comment1.target=void\ agregarCliente(java.util.HashMap)
+comment2.params=productores
+comment2.target=void\ mostrarCliente(java.util.HashMap)
+comment3.params=productores
+comment3.target=void\ modificarCliente(java.util.HashMap)
+comment4.params=productores
+comment4.target=void\ eliminarCliente(java.util.HashMap)
+numComments=5

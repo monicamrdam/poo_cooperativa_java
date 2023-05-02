@@ -8,7 +8,6 @@ package ProyectoCooperativa.Modelos.Producto;
  */
 public class Producto
 {
-    private int idProducto;
     private String nombreProducto;
     private double numHectareasProducto;
     //centimos por kg
@@ -21,21 +20,14 @@ public class Producto
 
     }
 
-    public Producto(int idProducto, String nombreProducto, double numHectareasProducto,double precioProductoSinIVa,double rendimientoPorHa){
-        this.idProducto = idProducto;
+    public Producto(String nombreProducto, double numHectareasProducto,double precioProductoSinIVa,double rendimientoPorHa){
         this.nombreProducto = nombreProducto;
         this.numHectareasProducto = numHectareasProducto;
         this.precioProductoSinIVa = precioProductoSinIVa;
         this.rendimientoPorHa = rendimientoPorHa;
     }
 
-    public int getIdProducto() {
-        return idProducto;
-    }
-
-    private void setId(int idProducto) {
-        this.idProducto = idProducto;
-    }
+    
 
     public String getNombreProducto() {
         return nombreProducto;
@@ -71,6 +63,6 @@ public class Producto
 
     @Override
     public String toString() {
-        return "Id producto: " + this.idProducto + " Nombre producto: "+ this.nombreProducto + " Numero Hectareas Producto "+ this.numHectareasProducto  + " Precio Producto Sin Iva: "+ this.precioProductoSinIVa + " Rendimiento por Hectarea: "+ this.rendimientoPorHa;
+        return " Nombre producto: "+ this.nombreProducto + " Numero Hectareas Producto "+ this.numHectareasProducto  + " Precio Producto Sin Iva: "+ this.precioProductoSinIVa + " Rendimiento por Hectarea: "+ this.rendimientoPorHa;
     }
 }
