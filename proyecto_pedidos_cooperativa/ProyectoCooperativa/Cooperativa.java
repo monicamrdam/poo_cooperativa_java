@@ -1,6 +1,7 @@
 package ProyectoCooperativa;
 import ProyectoCooperativa.Modelos.Pedidos.*;
 import ProyectoCooperativa.Modelos.Clientes.*;
+import ProyectoCooperativa.Interfaces.*;
 
 /**
  * Write a description of class Cooperativa here.
@@ -46,16 +47,25 @@ public class Cooperativa
         dp2= new DetallePedido("23-04-2023",c2,cp2);
         dp3= new DetallePedido("24-04-2023",c3,cp3);
 
+        System.out.println(dp1.getCaracteristicaPedido().getcantidadPedida());
+        System.out.println(dp2);
+        System.out.println(dp3);
+        Interfaz_usuario_programa.saltoParrafo();
+
         gp.agregarPedido(dp1);
         gp.agregarPedido(dp2);
         gp.agregarPedido(dp3);
+
+        System.out.println("Datos cargados");
     }
 
     public static void main (String []args){
         cargarDatos();
-        System.out.println(dp1.getCaracteristicaPedido().getcantidadPedida());
-        System.out.println(dp2);
-        System.out.println(dp3);
+        Interfaz_usuario_programa.saltoParrafo();
+
+        //LLamada al menu
+        Menu.menuGestion();
+        Interfaz_usuario_programa.saltoParrafo();  
 
     }
 

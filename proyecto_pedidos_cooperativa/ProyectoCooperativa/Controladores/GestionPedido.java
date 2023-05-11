@@ -1,17 +1,18 @@
-package ProyectoCooperativa.Modelos.Pedidos;
+package ProyectoCooperativa.Controladores;
+import ProyectoCooperativa.Modelos.Pedidos.*;
 import java.util.TreeMap;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.SortedMap;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
-import java.io.IOException;
 
 /**
  * Write a description of class GestionPedido here.
- * Clase que permite gestionar los pedidos de la cooperativa por idPedido
- * Dispone de 5 métodos principales: agregarPedido, modificarPedido,borrarPedido, buscarPedido, listarPedidos
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public class GestionPedido
 {

@@ -1,12 +1,12 @@
 #BlueJ package file
 objectbench.height=94
-objectbench.width=527
-package.divider.horizontal=0.5863277826468011
+objectbench.width=539
+package.divider.horizontal=0.5994741454864155
 package.divider.vertical=0.7987321711568938
 package.editor.height=396
 package.editor.width=795
-package.editor.x=180
-package.editor.y=25
+package.editor.x=348
+package.editor.y=134
 package.frame.height=604
 package.frame.width=947
 package.numDependencies=0
@@ -34,8 +34,8 @@ target3.height=82
 target3.name=Modelos
 target3.type=PackageTarget
 target3.width=120
-target3.x=500
-target3.y=210
+target3.x=520
+target3.y=250
 target4.height=70
 target4.name=Cooperativa
 target4.showInterface=false
