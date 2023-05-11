@@ -13,13 +13,12 @@ public class DetallePedido
 {
     private String fecha;
     private Cliente cliente;
-    //private Producto producto;
-    //private Productor productor;
-    //private Logistica logistica;
+    private CaracteristicaPedido cp;
 
-    public DetallePedido(String fecha, Cliente cliente){
+    public DetallePedido(String fecha, Cliente cliente, CaracteristicaPedido cp){
         this.fecha = fecha;
         this.cliente=cliente;
+        this.cp=cp;
 
     }
 
@@ -31,9 +30,12 @@ public class DetallePedido
         return cliente;
     }
 
-    @Override
-    public String toString(){
-        return this.fecha+" fecha "+this.cliente +" cliente ";
+    public CaracteristicaPedido getCaracteristicaPedido(){
+        return cp;
     }
 
+    @Override
+    public String toString(){
+        return " Fecha Pedido: "  + this.fecha +" - "+ " Datos cliente: " + this.cliente + " - "+  " Caracteristicas pedido: " + this.cp;
+    }
 }

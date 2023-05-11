@@ -25,10 +25,11 @@ public abstract class Cliente
         return telefono;
     }
 
-     @Override
+    @Override
     public String toString(){
-        return "Nombre: "  + this.nombre +" "+ "Telefono: " + this.telefono;
+        return "Nombre: "  + this.nombre +" / "+ "Telefono: " + this.telefono;
     }
+
     public abstract void cantidadAdquirida(Double cantidad);
 
 }
