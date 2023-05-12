@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Productor
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Productor\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=nombre\ telefono
+comment1.target=Productor(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=
+comment3.target=java.lang.String\ getTelefono()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=limiteHa
+comment5.target=void\ limiteHa(java.lang.Integer)
+numComments=6

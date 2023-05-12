@@ -12,7 +12,14 @@ public class ContabilidadCooperativa
     private static Double gananciaCooperativaConsumidorFinal;
     private static Double porcentajeIVA;
     private static Double incrementoPrecio;
+    private static Integer limiteHa;
 
+    public static Integer limiteHaAñoFiscal(){
+        limiteHa=5;
+        return limiteHa;
+    }
+    
+    
     public Double gananciaDistribuidorfinal(Double cantidad){
         gananciaCooperativaDistribuidorFinal =0.05;
         incrementoPrecio = cantidad * gananciaCooperativaDistribuidorFinal;
