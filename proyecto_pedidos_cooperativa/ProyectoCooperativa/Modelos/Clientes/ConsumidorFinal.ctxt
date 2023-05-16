@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=ConsumidorFinal
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ ConsumidorFinal\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=nombre\ telefono
-comment1.target=ConsumidorFinal(java.lang.String,\ java.lang.String)
-comment2.params=cantidad
-comment2.target=void\ cantidadAdquirida(java.lang.Double)
-numComments=3
