@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=DatosCooperativa
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ DatosCooperativa\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=distribuidorFinal\ consumidorFinal\ IVAconsumidorFinal\ limiteHa
+comment1.target=DatosCooperativa(int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=int\ getDistribuidorFinal()
+comment3.params=
+comment3.target=int\ getConsumidorFinal()
+comment4.params=
+comment4.target=int\ getIVAconsumidorFinal()
+comment5.params=
+comment5.target=int\ getLimiteHa()
+comment6.params=distribuidorFinal
+comment6.target=void\ setDistribuidorFinal(int)
+comment7.params=consumidorFinal
+comment7.target=void\ setConsumidorFinal(int)
+comment8.params=IVAconsumidorFinal
+comment8.target=void\ setIVAconsumidorFinal(int)
+comment9.params=limiteHa
+comment9.target=void\ setLimiteHa(int)
+numComments=10

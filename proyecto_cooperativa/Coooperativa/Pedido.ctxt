@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Pedido
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pedido\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=fecha\ cliente\ producto\ ofertaAplicada\ productor
+comment1.target=Pedido(java.lang.String,\ Cliente,\ Producto,\ double,\ Productor)
+comment10.params=ofertaAplicada
+comment10.target=void\ setOfertaAplicada(double)
+comment11.params=productor
+comment11.target=void\ setProductor(Productor)
+comment2.params=
+comment2.target=java.lang.String\ getFecha()
+comment3.params=
+comment3.target=Cliente\ getCliente()
+comment4.params=
+comment4.target=Producto\ getProducto()
+comment5.params=
+comment5.target=double\ getOfertaAplicada()
+comment6.params=
+comment6.target=Productor\ getProductor()
+comment7.params=fecha
+comment7.target=void\ setFecha(java.lang.String)
+comment8.params=cliente
+comment8.target=void\ setCliente(Cliente)
+comment9.params=producto
+comment9.target=void\ setProducto(Producto)
+numComments=12
