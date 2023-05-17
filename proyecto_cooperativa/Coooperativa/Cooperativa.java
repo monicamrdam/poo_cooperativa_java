@@ -23,6 +23,28 @@ public class Cooperativa {
         return pedidos;
     }
 
+    private static void buscarCliente(Map<Integer, Pedido> pedidos, Cliente cliente) {
+        try {
+            System.out.println("Estos son todos lo pedidos realizados por un cliente.");
+            System.out.println("Pedidos realizados por " + cliente.getNombre() + ":");
+            System.out.println("-----------------------------");
+            boolean encontrado = false;
+            for (Map.Entry<Integer, Pedido> entry : pedidos.entrySet()) {
+                Pedido pedido = entry.getValue();
+                if (pedido.getCliente().equals(cliente)) {
+                    System.out.println(" " + pedido.toString());
+                    encontrado = true;
+                }
+            }
+            if (!encontrado) {
+                System.out.println("No se encontraron pedidos para el cliente " + cliente.getNombre());
+            }
+        } catch (Exception e) {
+            System.out.println("Se produjo un error al buscar el cliente: " + e.getMessage());
+        }
+
+    }
+
     public static void main(String[] args) {
         // Creación de objetos Cooperativa, Clientes, Productores, etc.
 
@@ -95,6 +117,10 @@ public class Cooperativa {
         registrarPedido(pedido4);
         registrarPedido(pedido5);
 
+        buscarCliente(pedidos, cliente1);
+
+        System.out.println("Estos son todos lo pedidos realizados a la cooperativa.");
+        System.out.println("-----------------------------");       
         for (Map.Entry<Integer, Pedido> entry : pedidos.entrySet()) {
             int numeroPedido = entry.getKey();
             Pedido pedido = entry.getValue();
@@ -107,8 +133,6 @@ public class Cooperativa {
             System.out.println("Productor: " + pedido.getProductor());
             System.out.println("-----------------------------");
         }
-
-    
 
         // Realizar más operaciones y gestiones de la cooperativa
     }
