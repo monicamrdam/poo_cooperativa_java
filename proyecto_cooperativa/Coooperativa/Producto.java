@@ -72,4 +72,10 @@ public class Producto {
     public void setEsPerecedero(boolean esPerecedero) {
         this.esPerecedero = esPerecedero;
     }
+     @Override
+    public String toString() {
+        return "Producto: " + nombreProducto + ", ID: " + idProducto + ", Extensión (HA): " + extensionHA +
+                ", Rendimiento por HA: " + rendimientoPorHa + ", Valor referencia sin IVA: " + valorReferenciaSinIVA +
+                ", Es perecedero: " + esPerecedero;
+    }
 }

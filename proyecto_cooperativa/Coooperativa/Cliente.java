@@ -33,4 +33,8 @@ public abstract class Cliente {
     public void comprarProducto(double cantidad) {
         cantidadComprada += cantidad;
     }
+     @Override
+    public String toString() {
+        return "Cliente: " + nombre + ", Teléfono: " + telefono + ", Cantidad comprada: " + cantidadComprada;
+    }
 }

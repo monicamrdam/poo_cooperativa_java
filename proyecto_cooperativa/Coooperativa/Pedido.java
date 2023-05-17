@@ -61,4 +61,13 @@ public class Pedido {
     public void setProductor(Productor productor) {
         this.productor = productor;
     }
+     @Override
+    public String toString() {
+        return "Fecha: " + fecha + "\n" +
+                "Cliente: " + cliente + "\n" +
+                "Producto: " + producto + "\n" +
+                "Oferta aplicada: " + ofertaAplicada + "\n" +
+                "Productor: " + productor;
+    }
+    
 }

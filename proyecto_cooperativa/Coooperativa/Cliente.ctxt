@@ -11,4 +11,6 @@ comment4.params=
 comment4.target=double\ getCantidadComprada()
 comment5.params=cantidad
 comment5.target=void\ comprarProducto(double)
-numComments=6
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

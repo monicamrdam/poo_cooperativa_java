@@ -30,4 +30,14 @@ public abstract class Productor {
     public List<Producto> getProductosVende() {
         return productosVende;
     }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Productor: ").append(nombreProductor).append(", Teléfono: ").append(telefonoProductor).append("\n"); 
+        sb.append("Productos vendidos:\n");
+        for (Producto producto : productosVende) {
+            sb.append(producto.toString()).append("\n");
+        }
+        return sb.toString();
+    }
 }
