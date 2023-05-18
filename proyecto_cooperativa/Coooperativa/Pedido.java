@@ -1,6 +1,5 @@
 package Coooperativa;
 
-
 /**
  * Write a description of class Pedido here.
  * 
@@ -13,6 +12,10 @@ public class Pedido {
     private Producto producto;
     private double ofertaAplicada;
     private Productor productor;
+
+    public Pedido(Productor productor) {
+        this.productor = productor;
+    }
 
     public Pedido(String fecha, Cliente cliente, Producto producto, double ofertaAplicada, Productor productor) {
         this.fecha = fecha;
@@ -61,13 +64,21 @@ public class Pedido {
     public void setProductor(Productor productor) {
         this.productor = productor;
     }
-     @Override
+
+    @Override
     public String toString() {
-        return "Fecha: " + fecha + "\n" +
-                "Cliente: " + cliente + "\n" +
-                "Producto: " + producto + "\n" +
-                "Oferta aplicada: " + ofertaAplicada + "\n" +
-                "Productor: " + productor;
+        if(fecha != null && cliente !=null)
+        {
+            return "Fecha: " + fecha + "\n" +
+            "Cliente: " + cliente + "\n" +
+            "Producto: " + producto + "\n" +
+            "Oferta aplicada: " + ofertaAplicada + "\n" +
+            "Productor: " + productor;
+        }
+        else
+        {
+            return "Productor: " + productor ;
+        }
     }
-    
+
 }

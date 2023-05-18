@@ -11,16 +11,27 @@ import java.util.HashMap;
  * @version (a version number or a date)
  */
 public class Cooperativa {
-    private static Map<Integer, Pedido> pedidos = new HashMap<>();
+    private static Map<Integer, Pedido> pedidosCompraCooperativa = new HashMap<>();
+    private static Map<Integer, Pedido> pedidosVentasClientes = new HashMap<>();
     private static Map<Integer, Pedido> pedidosRegistrados;
-    private static int generarNumeroPedido() {
-        return pedidos.size() + 1;
+    
+    private static int generarNumeroPedidoCliente() {
+        return pedidosVentasClientes.size() + 1;
+    }
+    private static int generarNumeroPedidoCooperativa() {
+        return pedidosCompraCooperativa.size() + 1;
     }
 
-    private static Map<Integer, Pedido> registrarPedido(Pedido pedido) {
-        int numeroPedido = generarNumeroPedido();
-        pedidos.put(numeroPedido, pedido);
-        return pedidos;
+    private static Map<Integer, Pedido> registrarPedidoCliente(Pedido pedido) {
+        int numeroPedido = generarNumeroPedidoCliente();
+        pedidosVentasClientes.put(numeroPedido, pedido);
+        return pedidosVentasClientes;
+    }
+
+    private static Map<Integer, Pedido> registrarCompraCooperativa(Pedido pedido) {
+        int numeroPedido = generarNumeroPedidoCooperativa();
+        pedidosCompraCooperativa.put(numeroPedido, pedido);
+        return pedidosCompraCooperativa;
     }
 
     private static void buscarCliente(Map<Integer, Pedido> pedidos, Cliente cliente) {
@@ -103,25 +114,53 @@ public class Cooperativa {
         productosProductor7.add(producto9);
         Productor productor7 = new PequeñoProductor("212223", "Productor 7", "7777777777", productosProductor7);
 
-        // Creación de pedidos
+        // Creación de pedidos comprados por la cooperativa
+        Pedido pedidoCp1 = new Pedido(productor1);
+        Pedido pedidoCp2 = new Pedido(productor5);
+        Pedido pedidoCp3 = new Pedido(productor6);
+        Pedido pedidoCp4 = new Pedido(productor3);
+        Pedido pedidoCp5 = new Pedido(productor4);
+
+        // Creación de pedidos de compras de clientes
         Pedido pedido1 = new Pedido("2023-05-17", cliente1, producto1, 0.0, productor1);
         Pedido pedido2 = new Pedido("2023-05-18", cliente5, producto2, 0.0, productor2);
         Pedido pedido3 = new Pedido("2023-05-19", cliente1, producto4, 0.0, productor5);
         Pedido pedido4 = new Pedido("2023-05-20", cliente4, producto9, 0.0, productor2);
         Pedido pedido5 = new Pedido("2023-05-21", cliente3, producto5, 0.0, productor4);
 
-        // Registro de pedidos
-        registrarPedido(pedido1);
-        registrarPedido(pedido2);
-        registrarPedido(pedido3);
-        registrarPedido(pedido4);
-        registrarPedido(pedido5);
+        // Registro de pedidos comprados por la cooperativa
+        registrarCompraCooperativa(pedidoCp1);
+        registrarCompraCooperativa(pedidoCp2);
+        registrarCompraCooperativa(pedidoCp3);
+        registrarCompraCooperativa(pedidoCp4);
+        registrarCompraCooperativa(pedidoCp5);
 
-        buscarCliente(pedidos, cliente1);
+        
+        // Registro de pedidos comprados por los clientes
+        registrarPedidoCliente(pedido1);
+        registrarPedidoCliente(pedido2);
+        registrarPedidoCliente(pedido3);
+        registrarPedidoCliente(pedido4);
+        registrarPedidoCliente(pedido5);
 
-        System.out.println("Estos son todos lo pedidos realizados a la cooperativa.");
+        
+        buscarCliente(pedidosVentasClientes, cliente1);
+        
+        System.out.println("Estos son todos lo pedidos comprados por la cooperativa.");
         System.out.println("-----------------------------");       
-        for (Map.Entry<Integer, Pedido> entry : pedidos.entrySet()) {
+        for (Map.Entry<Integer, Pedido> entry : pedidosCompraCooperativa.entrySet()) {
+            int numeroPedido = entry.getKey();
+            Pedido pedido = entry.getValue();
+            System.out.println("Número de pedido: " + numeroPedido);
+            System.out.println("Pedido: " + pedido);       
+        }
+        System.out.println();       
+
+        
+        
+        System.out.println("Estos son todos lo pedidos comprados por los clientes.");
+        System.out.println("-----------------------------");       
+        for (Map.Entry<Integer, Pedido> entry : pedidosVentasClientes.entrySet()) {
             int numeroPedido = entry.getKey();
             Pedido pedido = entry.getValue();
             System.out.println("Número de pedido: " + numeroPedido);
