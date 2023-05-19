@@ -1,13 +1,12 @@
 package Coooperativa;
 
-
 /**
  * Write a description of class Producto here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Producto {
+public abstract class Producto {
     private String idProducto;
     private String nombreProducto;
     private int extensionHA;
@@ -16,7 +15,7 @@ public class Producto {
     private boolean esPerecedero;
 
     public Producto(String idProducto, String nombreProducto, int extensionHA, double rendimientoPorHa,
-                    double valorReferenciaSinIVA, boolean esPerecedero) {
+    double valorReferenciaSinIVA, boolean esPerecedero) {
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.extensionHA = extensionHA;
@@ -72,10 +71,13 @@ public class Producto {
     public void setEsPerecedero(boolean esPerecedero) {
         this.esPerecedero = esPerecedero;
     }
-     @Override
+
+    public abstract double calcularCoste(double km, double kg);
+
+    @Override
     public String toString() {
         return "Producto: " + nombreProducto + ", ID: " + idProducto + ", Extensión (HA): " + extensionHA +
-                ", Rendimiento por HA: " + rendimientoPorHa + ", Valor referencia sin IVA: " + valorReferenciaSinIVA +
-                ", Es perecedero: " + esPerecedero;
+        ", Rendimiento por HA: " + rendimientoPorHa + ", Valor referencia sin IVA: " + valorReferenciaSinIVA +
+        ", Es perecedero: " + esPerecedero;
     }
 }

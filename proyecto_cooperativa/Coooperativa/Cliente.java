@@ -10,12 +10,10 @@ package Coooperativa;
 public abstract class Cliente {
     private String nombre;
     private String telefono;
-    private double cantidadComprada;
 
     public Cliente(String nombre, String telefono) {
         this.nombre = nombre;
         this.telefono = telefono;
-        this.cantidadComprada = 0.0;
     }
 
     public String getNombre() {
@@ -26,15 +24,9 @@ public abstract class Cliente {
         return telefono;
     }
 
-    public double getCantidadComprada() {
-        return cantidadComprada;
-    }
 
-    public void comprarProducto(double cantidad) {
-        cantidadComprada += cantidad;
-    }
      @Override
     public String toString() {
-        return "Cliente: " + nombre + ", Teléfono: " + telefono + ", Cantidad comprada: " + cantidadComprada;
+        return "Cliente: " + nombre + ", Teléfono: " + telefono ;
     }
 }

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=ProductoNoPerecedero
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ productoNoPerecedero\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=idProducto\ nombreProducto\ extensionHA\ rendimientoPorHa\ valorReferenciaSinIVA\ esPerecedero
+comment1.target=ProductoNoPerecedero(java.lang.String,\ java.lang.String,\ int,\ double,\ double,\ boolean)
+comment2.params=km\ kg
+comment2.target=double\ calcularCoste(double,\ double)
+numComments=3
