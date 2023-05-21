@@ -10,7 +10,7 @@ package Coooperativa;
 public class ConsumidorFinal extends Cliente {
     private String nif;
 
-    public ConsumidorFinal(String nif, String nombre, String telefono) {
+    public ConsumidorFinal( String nombre, String telefono,String nif) {
         super(nombre, telefono);
         this.nif = nif;
     }

@@ -11,7 +11,7 @@ import java.util.List;
 public class PequeñoProductor extends Productor {
     private String nif;
 
-    public PequeñoProductor(String nif, String telefonoProductor, String nombreProductor, List<Producto> productosVende) {
+    public PequeñoProductor( String telefonoProductor, String nombreProductor,String nif, List<Producto> productosVende) {
         super(telefonoProductor, nombreProductor, productosVende);
         this.nif = nif;
     }

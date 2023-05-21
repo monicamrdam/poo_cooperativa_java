@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=GranProductor
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ GranProductor\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=cif\ telefonoProductor\ nombreProductor\ productosVende
+comment1.params=telefonoProductor\ nombreProductor\ cif\ productosVende
 comment1.target=GranProductor(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.util.List)
 comment2.params=
 comment2.target=java.lang.String\ getCif()

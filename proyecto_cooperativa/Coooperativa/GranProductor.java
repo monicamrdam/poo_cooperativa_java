@@ -11,7 +11,7 @@ import java.util.List;
 public class GranProductor extends Productor {
     private String cif;
 
-    public GranProductor(String cif, String telefonoProductor, String nombreProductor, List<Producto> productosVende) {
+    public GranProductor(String telefonoProductor, String nombreProductor,String cif,  List<Producto> productosVende) {
         super(telefonoProductor, nombreProductor, productosVende);
         this.cif = cif;
     }

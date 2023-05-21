@@ -9,10 +9,10 @@ package Coooperativa;
 public class ProductoNoPerecedero extends Producto
 {
     private static double costeFinal;
-    public ProductoNoPerecedero (String idProducto, String nombreProducto, int extensionHA, double rendimientoPorHa,
+    public ProductoNoPerecedero (String idProducto, String nombreProducto,  double cantidadProducto, int extensionHA, double rendimientoPorHa,
     double valorReferenciaSinIVA, boolean esPerecedero)
     {
-        super(idProducto,nombreProducto, extensionHA, rendimientoPorHa,valorReferenciaSinIVA,esPerecedero);
+        super(idProducto,nombreProducto,cantidadProducto, extensionHA, rendimientoPorHa,valorReferenciaSinIVA,esPerecedero);
     }
 
     @Override

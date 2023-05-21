@@ -10,7 +10,7 @@ package Coooperativa;
 public class DistribuidorFinal extends Cliente {
     private String cif;
 
-    public DistribuidorFinal(String cif, String nombre, String telefono) {
+    public DistribuidorFinal( String nombre, String telefono,String cif) {
         super(nombre, telefono);
         this.cif = cif;
     }
